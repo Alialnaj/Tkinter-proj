@@ -12,8 +12,8 @@ def passUrldata():
     downloadthread.start()
 
 def getStandardsize(size):
-    itme = ['bytes', 'KB', 'MB', 'GB', 'TB']
-    for x in itme:
+    items = ['bytes', 'KB', 'MB', 'GB', 'TB']
+    for x in itmes:
         if size < 1024.0:
             return "%3.1f %s" % (size, x)
     return size
